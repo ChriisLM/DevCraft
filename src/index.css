@@ -1,6 +1,47 @@
 @import "tailwindcss";
 @custom-variant dark (&:where(.dark, .dark *));
 
+
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight:400;
+  font-display: swap;
+  src: url("./assets/fonts/Poppins-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("./assets/fonts/Poppins-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("./assets/fonts/Poppins-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./assets/fonts/Poppins-Bold.woff2") format("woff2");
+}
+
+@theme{
+  --color-light-primary: #fbfbfe;
+  --color-light-secondary: #d3cec4;
+  --color-color-light-primary: #857f72;
+  --color-color-light-secondary: #27241d;
+  --color-dark-primary: #0b0a0f;
+  --color-dark-secondary: #16171c;
+  --color-color-dark-primary: #e8e6e1;
+  --color-color-dark-secondary: #a39e93;
+}
+
 * {
   box-sizing: border-box;
 }
