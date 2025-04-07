@@ -48,11 +48,6 @@ export function Header() {
                   Inicio
                 </span>
               </Link>
-              <Link to="/tools">
-                <span className="text-color-light-secondary dark:text-color-dark-primary hover:text-blue-500 transition-colors duration-300">
-                  Herramientas
-                </span>
-              </Link>
               <Link to="/about">
                 <span className="text-color-light-secondary dark:text-color-dark-primary hover:text-blue-500 transition-colors duration-300">
                   Acerca de
