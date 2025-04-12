@@ -31,15 +31,15 @@ export function SidebarTools() {
 
       <aside
         className={`
-        fixed md:static flex-col justify-between bg-dark-primary text-white 
-        shadow-md w-56 h-screen z-30 not-first:transition-transform duration-300 ease-in-out
+        fixed md:static flex-col justify-between bg-dark-primary text-color-dark-primary/80 
+        shadow-md w-60 h-screen z-30 not-first:transition-transform duration-300 ease-in-out
         ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
         md:flex
       `}
       >
         <section>
           <div className="flex justify-center items-center py-4 space-x-4 mb-2">
-            <img src={Logo} alt="DevCraft" className="w-10 h-10 invert" />
+            <img src={Logo} alt="DevCraft" className="w-10 h-10 invert-75" />
             <NavLink
               to="/"
               className="text-2xl font-bold text-color-light-secondary dark:text-color-dark-primary"
@@ -53,7 +53,7 @@ export function SidebarTools() {
                 <Link
                   key={tool.path}
                   to={`/tools/${tool.path}`}
-                  className={`flex items-center gap-3 px-4 py-2 rounded-md font-medium transition-colors ${
+                  className={`flex items-center gap-3 px-4 py-2 font-medium transition-colors ${
                     location.pathname === `/tools/${tool.path}`
                       ? "bg-dark-secondary/90 text-white"
                       : "text-gray-700 hover:bg-gray-800"
@@ -62,7 +62,7 @@ export function SidebarTools() {
                   <img
                     src={icons[tool.icon]}
                     alt={tool.name}
-                    className="w-8 invert"
+                    className="w-8"
                   />
                   {tool.name}
                 </Link>

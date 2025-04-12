@@ -1,3 +1,5 @@
+import { Footer } from "../components/sections/Footer";
+import { Header } from "../components/sections/Header";
 import { Hero } from "../components/sections/Hero";
 import { CardToolHome } from "../components/ui/CardToolHome";
 import { TitleHome } from "../components/ui/TitleHome";
@@ -6,6 +8,7 @@ import { tools } from "../lib/constants/tools";
 export function Home() {
   return (
     <div className="top-0 z-[-2] h-fit w-full bg-[#fbfbfe] dark:bg-[#0b0a0f] bg-[radial-gradient(#504c43_1px,#fbfbfe_1px)] dark:bg-[radial-gradient(#5e5b56_1px,#0b0a0f_1px)] bg-[size:20px_20px]">
+      <Header />
       <div className="mt-18 bg-color-light-secondary/20 dark:bg-color-dark-secondary/10">
         <Hero />
         <TitleHome />
@@ -15,6 +18,7 @@ export function Home() {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
